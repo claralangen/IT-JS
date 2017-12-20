@@ -1,0 +1,406 @@
+body {
+  background-color: #0F0F21;
+}
+
+.navContainer {
+  background-color: #0F0F21;
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  width: 1440px;
+  position: fixed;
+  z-index: 111111;
+}
+
+.logo {
+  position: absolute;
+  width: 170px;
+  height: 30px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.navigation {
+  display: flex;
+  margin-left: 250px;
+  margin-top: 18px;
+}
+
+.navElements {
+  margin-left: 25px;
+  color: #F95738;
+  font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+  font-weight: 900;
+  font-size: 23px;
+}
+
+.help {
+  color: #911A0D;
+}
+
+.secondNav {
+  display: flex;
+  margin-top: 18px;
+}
+
+.recherche {
+  display: flex;
+}
+
+.saisir {
+  background-color: #1C1C45;
+  color: #F95738;
+  height: 25px;
+  border: 0;
+  width: 200px;
+  margin-top: 3px;
+  display: none;
+}
+
+.rechercheIcon {
+  margin-left: 10px;
+}
+
+.connection {
+  display: flex;
+  margin-left: 25px;
+  color: #F95738;
+  font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+  font-weight: 900;
+  font-size: 23px;
+  margin-right: 25px;
+}
+
+.connectIcon {
+  margin-right: 25px;
+}
+
+.connectionText {
+  color: #F95738;
+}
+
+.recommandeContainer {
+  width: 1440px;
+  color: #F95738;
+  font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+  font-weight: 900;
+  z-index: 2;
+  position: absolute;
+}
+
+.backVideo {
+  width: 1440px;
+  z-index: 1;
+}
+
+.titleContainer {
+  width: 500px;
+  height: 200px;
+  align-content: flex-start;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 250px;
+}
+
+.vidTitle {
+  font-size: 90px;
+  -webkit-text-stroke: 2px #F95738;
+  -webkit-text-fill-color: #000000;
+  position: absolute;
+}
+
+.noteStar {
+  margin-top: 120px;
+  margin-left: 250px;
+}
+
+.playContainer {
+  width: 200px;
+  height: 40px;
+  align-content: flex-start;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+}
+
+.playText {
+  color: #F95738;
+  font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  margin-left: 20px;
+}
+
+.playButton {
+  margin-left: 80px;
+}
+
+.descriptionContainer {
+  width: 600px;
+  height: 160px;
+  float: right;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 30px;
+  text-align: left;
+}
+
+.synopsis {
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  color: #F95738;
+  font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+}
+
+.vidDescription {
+  color: #F95738;
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: lighter;
+  font-family: 'Sanchez', serif;
+}
+
+.scrollContainer {
+  margin-top: 180px;
+  margin-left: 700px;
+}
+
+.scrollButton{
+  width: 50px;
+}
+
+.sectionTitle{
+  color: #F95738;
+  font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.trendingContainer{
+  margin-top: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.oneDescription{
+  z-index: 2;
+  position: absolute;
+  color: #F95738;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 1152px;
+  height: 500px;
+  display: none;
+}
+
+.titleOne{
+  font-size: 60px;
+  font-family: 'Tw Cen MT', sans-serif;
+  margin-top: 330px;
+  margin-left: 15px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+
+}
+
+.textOne{
+  font-size: 20px;
+  font-family: 'Sanchez', serif;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  position: absolute;
+}
+
+.playIcon{
+  width: 80px;
+  height: 80px;
+  float: right;
+  margin-right: 20px;
+}
+
+.oneM{
+  width: 100%;
+  height: 500px;
+  margin-bottom: 25px;
+  z-index: 1;
+}
+
+.twoDescription{
+  z-index: 2;
+  position: absolute;
+  color: #F95738;
+  width: 566px;
+  height: 300px;
+  display: none;
+}
+
+.titleTwo{
+  font-size: 40px;
+  font-family: 'Tw Cen MT', sans-serif;
+  margin-top: 180px;
+  margin-left: 15px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.textTwo{
+  font-size: 15px;
+  font-family: 'Sanchez', serif;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  position: absolute;
+}
+
+.playIconTwo{
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-right: 20px;
+}
+
+.twoM{
+  width: 566px;
+  height: 300px;
+  margin-right: 20px;
+  z-index: 1;
+}
+
+.threeDescription{
+  z-index: 2;
+  position: absolute;
+  color: #F95738;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 566px;
+  height: 300px;
+  display: none;
+}
+
+.titleThree{
+  font-size: 40px;
+  font-family: 'Tw Cen MT', sans-serif;
+  margin-top: 150px;
+  margin-left: 15px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.textThree{
+  font-size: 15px;
+  font-family: 'Sanchez', serif;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  position: absolute;
+}
+
+.playIconThree{
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-right: 20px;
+}
+
+.threeM{
+  width: 566px;
+  height: 300px;
+}
+
+.listGenre{
+  display: flex;
+  color: #F95738;
+  font-family: 'Tw Cen MT', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-top: 100px
+}
+
+.btnGenre{
+  width: 150px;
+  height: 22px;
+  background-color: #1C1C3A;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.btnAll{
+  width: 150px;
+  height: 22px;
+  background-color: #1C1C3A;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 160px;
+  margin-right: 170px;
+  cursor: pointer;
+}
+
+
+.imgMovie {
+  margin-top: 70px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: static;
+}
+
+.lesImages {
+  width: 45%;
+  height: 300px;
+  margin-top: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.footerContainer{
+  width: 100%;
+  height: 150px;
+  background-color: #1C1C3A;
+}
+
+.footerElements{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+}
+
+.footerText{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 130px;
+}
+
+.footerLinks{
+  color: #F95738;
+  font-family: 'Tw Cen MT', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  margin-right: 150px;
+}
+
+.footerSocial{
+  display: flex;
+}
+
+.footerSocialIcon{
+  margin-top: 50px;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.copyright{
+  color: #F95738;
+  font-family: 'Tw Cen MT', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-top: 45px;
+  margin-left: 630px;
+}

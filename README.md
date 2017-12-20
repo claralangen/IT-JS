@@ -1,1 +1,1 @@
-# IT-JS
+# Semaine-Intensive-JS
