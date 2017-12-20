@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Descriptions</title>
+        <script src="Ressources/data.js"></script>
+        <style>
+            .screenshot{
+                cursor: pointer;
+            }
+
+            .modal {
+                position: fixed;
+
+                width: 100%;
+                height:100%;
+                top: 0;
+                left: 0;
+                display:none;
+            }
+
+            .overlay {
+                position: fixed;
+                background:rgba(0,0,0,0.6);
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                cursor: pointer;
+
+            }
+            .modalContent{
+                background: #16ff8f;
+                width: 500px;
+                height: 300px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+
+
+    <body>
+    <div class="screenshotContainer"></div>
+    <div class="modal">
+        <div class="overlay"></div>
+        <div class="modalContent">
+
+
+        </div>
+    </div>
+
+    <script>
+
+        var screenshotContainer = document.querySelector('.screenshotContainer');
+        var modal = document.querySelector('.modal');
+        var overlay = document.querySelector('.overlay');
+        var content = document.querySelector('.modalContent');
+
+        for (let i = 0; i < data.films.length; i++) {
+            var screenshot = data.films[i].title;
+            screenshotContainer.innerHTML += '<div class="screenshot" >' + screenshot +'<div/>';
+        }
+
+
+       /*
+        for (let i = 0; i < screenimage.length; i++) {
+
+        }*/
+
+       for (let i = 0; i < data.films.length; i++) {
+
+
+           /* var modalContentTitle = data.films[i].title;
+
+            */
+           // console.log(screenimage[i].textContent,data.films[i].title);
+           var screenimage = document.querySelectorAll('.screenshot');
+
+           screenimage[i].addEventListener('click', function () {
+               modal.style.display = 'block';
+
+               if ( screenimage[i].textContent === data.films[i].title){
+                   var modalContentSrc = data.films[i].src;
+                   var modalContentDuration = data.films[i].duration;
+                   var modalContentAuthor = data.films[i].author;
+                   var modalContentDescription = data.films[i].description;
+                   var modalContentYear = data.films[i].year;
+                   var modalContentRating = data.films[i].rating;
+                   content.innerHTML = '';
+                   content.innerHTML ='<video controls width="300px" height="200px" src="'+modalContentSrc+'"></video>';
+                   content.innerHTML +='<div class="duration">' + modalContentDuration + '</div>';
+                   content.innerHTML +='<div class="duration">' + modalContentDuration + '</div>';
+               }
+
+           });
+
+           overlay.addEventListener('click', function () {
+               modal.style.display = '';
+           });
+
+
+        }
+
+
+
+
+
+
+
+    </script>
+
+    </body>
+</html>
+
